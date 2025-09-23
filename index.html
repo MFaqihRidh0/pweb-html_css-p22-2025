@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Skip to content (A11Y) -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <!-- Header/Navbar -->
   <header class="site-header">
     <nav class="nav container">
@@ -19,37 +22,41 @@
   </header>
 
   <!-- Hero Section -->
-  <main>
+  <main id="main">
     <section class="hero container">
       <div class="hero__text">
         <h1>I’m <span>Jerome Polin Sijabat</span></h1>
         <p>YouTuber • Influencer • Businessman</p>
         <div class="hero__actions">
-          <a href="cv.html" class="btn cta">My CV</a>
+          <a href="cv.html" class="btn btn-primary">My CV</a>
         </div>
       </div>
       <div class="hero__art">
         <img src="jerome.jpg" alt="Foto Jerome Polin">
+        <!-- bubble animasi -->
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
       </div>
     </section>
 
     <!-- About -->
     <section id="about" class="section about container">
-      <h2>About Me</h2>
-      <p>
+      <h2 class="section__title">About Me</h2>
+      <p class="section__lead">
         Saya adalah content creator dan entrepreneur yang aktif di dunia digital. 
         Saya percaya bahwa edukasi bisa dikemas dengan cara yang seru dan menyenangkan. 
         Melalui karya, saya ingin menginspirasi generasi muda untuk terus belajar dan berkembang.
       </p>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact (pakai card grid) -->
     <section id="contact" class="section contact container">
-      <h2>Contact Me</h2>
-      <div class="contact-grid">
-        <div class="contact-item">📧 Email: jerome@example.com</div>
-        <div class="contact-item">📱 Instagram: @jeromepolin</div>
-        <div class="contact-item">🎥 YouTube: Nihongo Mantappu</div>
+      <h2 class="section__title">Contact Me</h2>
+      <div class="grid-3">
+        <div class="card">📧 Email: jerome@example.com</div>
+        <div class="card">📱 Instagram: @jeromepolin</div>
+        <div class="card">🎥 YouTube: Nihongo Mantappu</div>
       </div>
     </section>
   </main>
@@ -60,5 +67,8 @@
       <small>© 2025 Jerome Polin</small>
     </div>
   </footer>
+
+  <!-- To Top Button -->
+  <button class="to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
 </body>
 </html>
